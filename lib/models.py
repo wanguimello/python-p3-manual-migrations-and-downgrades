@@ -25,7 +25,7 @@ class Student(Base):
     grade = Column(Integer())
     birthday = Column(DateTime())
     enrolled_date = Column(DateTime(), default=datetime.now())
-
+    new_column=Column(String)
     def __repr__(self):
         return f"Student {self.id}: " \
             + f"{self.name}, " \
